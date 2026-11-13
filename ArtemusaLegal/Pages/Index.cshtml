@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Documentos de ARTEMUSA";
+}
+
+<div class="legal-home">
+    <header class="legal-hero">
+        <h1>@ViewData["Title"]</h1>
+        <p>Sistema de control de equipos y eventos de Artemusa Perú S.R.L.</p>
+    </header>
+
+    <nav class="legal-documents" aria-label="Documentos de ARTEMUSA">
+        <a class="legal-card" asp-page="/Privacy">
+            <div>
+                <h2>Política de privacidad</h2>
+                <p>Conoce qué datos utiliza el sistema y para qué se usan.</p>
+            </div>
+            <span class="legal-card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="legal-card" asp-page="/Terminos">
+            <div>
+                <h2>Términos y condiciones</h2>
+                <p>Consulta las reglas de uso de la cuenta y del registro de equipos y eventos.</p>
+            </div>
+            <span class="legal-card-arrow" aria-hidden="true">→</span>
+        </a>
+    </nav>
+</div>

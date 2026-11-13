@@ -1,0 +1,158 @@
+﻿@page "/privacidad"
+@model PrivacyModel
+
+@{
+    ViewData["Title"] = "Política de privacidad";
+}
+
+<article class="legal-home legal-terms" aria-labelledby="titulo-privacidad">
+    <header class="legal-hero">
+        <h1 id="titulo-privacidad">@ViewData["Title"]</h1>
+        <p>Sistema de control de equipos y eventos de ARTEMUSA.</p>
+    </header>
+
+    <div class="legal-terms-content">
+        <nav class="py-4 border-bottom" aria-label="Contenido de la política">
+            <h2>Contenido</h2>
+            <ul class="mb-0">
+                <li><a href="#responsable">Responsable y alcance</a></li>
+                <li><a href="#datos">Datos que se registran</a></li>
+                <li><a href="#finalidades">Para qué se utilizan los datos</a></li>
+                <li><a href="#acceso">Acceso a la información</a></li>
+                <li><a href="#almacenamiento">Almacenamiento y conservación</a></li>
+                <li><a href="#seguridad">Seguridad de la cuenta</a></li>
+                <li><a href="#derechos">Derechos sobre tus datos</a></li>
+                <li><a href="#contacto">Contacto y versión de la política</a></li>
+            </ul>
+        </nav>
+
+        <section aria-labelledby="responsable">
+            <h2 id="responsable">Responsable y alcance</h2>
+            <p>
+                Artemusa Perú S.R.L., con domicilio en [domicilio de la empresa],
+                es responsable del tratamiento de los datos personales utilizados
+                en el sistema de control de equipos y eventos de ARTEMUSA.
+                Esta política se aplica al personal que usa el sistema y a las personas
+                cuyos datos se registran para coordinar un evento o asignar equipos.
+            </p>
+        </section>
+
+        <section aria-labelledby="datos">
+            <h2 id="datos">Datos que se registran</h2>
+            <ul class="mb-0">
+                <li>
+                    <strong>Perfil del personal.</strong> Nombre, correo electrónico,
+                    teléfono y DNI, según los campos registrados en el perfil.
+                </li>
+                <li>
+                    <strong>Eventos y equipos.</strong> Nombre de las personas
+                    responsables, equipos asignados y registros de salida y devolución.
+                </li>
+                <li>
+                    <strong>Solicitudes y mensajes.</strong> Información que envías
+                    al solicitar un cambio en tu perfil, respuestas de administración
+                    y avisos asociados a la solicitud.
+                </li>
+                <li>
+                    <strong>Preferencias.</strong> Configuraciones que eliges en tu cuenta,
+                    como el tema claro u oscuro.
+                </li>
+            </ul>
+            <p class="mt-3">
+                El sistema obtiene estos datos al registrar perfiles, asignar equipos,
+                gestionar eventos y recibir solicitudes del personal.
+                [Indicar qué datos son obligatorios, cuáles son opcionales y qué sucede
+                si no se proporcionan].
+            </p>
+        </section>
+
+        <section aria-labelledby="finalidades">
+            <h2 id="finalidades">Para qué se utilizan los datos</h2>
+            <ul class="mb-0">
+                <li>Identificar al personal y administrar el acceso al sistema.</li>
+                <li>Coordinar eventos y saber quién tiene un equipo a su cargo.</li>
+                <li>Consultar el historial de asignaciones, salidas y devoluciones.</li>
+                <li>Atender solicitudes de actualización de datos y comunicar su resultado.</li>
+                <li>Recordar las preferencias de visualización de cada cuenta.</li>
+            </ul>
+            <p class="mt-3">
+                [Indicar la base que habilita el tratamiento para cada finalidad,
+                incluido el consentimiento cuando corresponda].
+            </p>
+        </section>
+
+        <section aria-labelledby="acceso">
+            <h2 id="acceso">Acceso a la información</h2>
+            <p>
+                El sistema cuenta con perfiles de trabajador y administrador.
+                La administración utiliza los datos necesarios para gestionar cuentas,
+                atender solicitudes y dar seguimiento a los movimientos de equipos.
+                El personal consulta la información operativa que le corresponde
+                según sus funciones.
+            </p>
+            <p class="mt-3">
+                [Precisar los destinatarios de los datos, los proveedores que intervienen
+                y las situaciones en que se comparte información con ellos].
+            </p>
+        </section>
+
+        <section aria-labelledby="almacenamiento">
+            <h2 id="almacenamiento">Almacenamiento y conservación</h2>
+            <p>
+                El sistema almacena sus registros en una base de datos PostgreSQL
+                alojada en Supabase. El banco de datos personales se identifica como
+                [nombre del banco de datos]. Los datos se alojan en [país y región
+                confirmados]. [Precisar las transferencias internacionales aplicables].
+            </p>
+            <p class="mt-3">
+                Los datos del perfil se conservan durante [plazo].
+                Los registros de movimientos de equipos y las solicitudes de cambio
+                se conservan durante [plazo o plazos aplicables].
+                [Indicar desde cuándo se cuentan esos plazos y qué sucede al vencer].
+            </p>
+        </section>
+
+        <section aria-labelledby="seguridad">
+            <h2 id="seguridad">Seguridad de la cuenta</h2>
+            <p>
+                Usa tu propia cuenta y mantén tu contraseña en reserva.
+                Si detectas un acceso que no reconoces o crees que alguien más conoce
+                tu contraseña, avisa a la administración por el canal indicado
+                en la sección de contacto.
+            </p>
+        </section>
+
+        <section aria-labelledby="derechos">
+            <h2 id="derechos">Derechos sobre tus datos</h2>
+            <p>
+                Puedes solicitar acceso a tus datos personales, pedir que se corrijan
+                si son inexactos, solicitar su cancelación u oponerte a su tratamiento
+                cuando corresponda.
+            </p>
+            <p class="mt-3">
+                Si necesitas actualizar un dato de tu perfil, puedes enviar una
+                solicitud desde el sistema. Para ejercer tus derechos de acceso,
+                rectificación, cancelación u oposición, presenta tu solicitud por el
+                canal indicado en la sección de contacto.
+            </p>
+        </section>
+
+        <section aria-labelledby="contacto">
+            <h2 id="contacto">Contacto y versión de la política</h2>
+            <p>
+                Para consultas sobre privacidad o para presentar una solicitud,
+                utiliza [correo institucional o canal oficial].
+            </p>
+            <p class="mt-3">
+                <strong>Última actualización</strong> · [Fecha de aprobación de esta versión]
+            </p>
+        </section>
+
+        <footer class="legal-terms-footer">
+            <a class="legal-terms-link" asp-page="/Terminos">
+                <span>Consultar los términos y condiciones</span>
+                <span aria-hidden="true">→</span>
+            </a>
+        </footer>
+    </div>
+</article>
